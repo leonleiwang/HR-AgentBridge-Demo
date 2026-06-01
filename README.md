@@ -1,6 +1,6 @@
 # DianHR-AgentBridge
 
-DianHR-AgentBridge 是一个面试展示用的 HR 数字员工本地集成 Demo。
+HR-AgentBridge 是一个数字员工集成 Demo，暂时设定这名数字员工的身份是 HR。
 
 它的目标不是做完整生产系统，而是证明一条可落地的企业数字员工链路：通过 OpenClaw 一类的 Agent Gateway / 企业智能助手运行时，连接钉钉等办公协同入口，接收员工或 HR 的自然语言请求，路由到 HR 场景能力，并把处理结果回推到聊天窗口。
 
