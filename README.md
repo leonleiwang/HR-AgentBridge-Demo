@@ -114,12 +114,6 @@ uvicorn mock_dingtalk:app --port 9100
 uvicorn app:app --port 8000 --reload
 ```
 
-如果 8000 被占用，可以换成 8010：
-
-```powershell
-uvicorn app:app --port 8010 --reload
-```
-
 检查配置：
 
 ```powershell
