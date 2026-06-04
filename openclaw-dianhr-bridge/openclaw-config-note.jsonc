@@ -1,0 +1,11 @@
+// Optional reference only. Do not paste this over your whole openclaw.json.
+// Keep your existing channels.dingtalk credentials unchanged.
+{
+  "skills": {
+    "entries": {
+      "dian-hr": {
+        "enabled": true
+      }
+    }
+  }
+}
