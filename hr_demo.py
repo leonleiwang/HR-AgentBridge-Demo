@@ -173,6 +173,8 @@ def public_url(path: str) -> str:
 
 def detect_task_type(content: str) -> str:
     lowered = content.lower()
+    if "gmail" in lowered or "@" in content:
+        return "interview_email"
     for task_type, keywords in TASK_KEYWORDS.items():
         if any(keyword.lower() in lowered for keyword in keywords):
             return task_type
@@ -751,7 +753,7 @@ def build_candidate_compare_result() -> HRResult:
 def build_interview_email_result(content: str) -> HRResult:
     candidate = CANDIDATES["wanglin"] if "赵澜" in content else CANDIDATES["liuchen"]
     email_match = re.search(r"[\w.\-+]+@[\w.\-]+\.\w+", content)
-    recipient = email_match.group(0) if email_match else "601423468@qq.com"
+    recipient = email_match.group(0) if email_match else "123456789@qq.com"
     time_text = "明天上午9点" if "上午" in content or "9" in content else "明天下午2点"
     location = "一楼小会议室" if "一楼" in content else "2楼会议室"
     subject = f"面试通知 - {time_text} | 候选人：{candidate.name} ({candidate.role})"

@@ -486,7 +486,7 @@ def demo_chat_html() -> str:
           <button class="prompt" data-prompt="好久不见，请介绍下你自己。你具体能做到哪些事情？">开场：介绍能力</button>
           <button class="prompt" data-prompt="检查今天未读邮件里有没有新候选人简历，如果有就生成候选人档案和对比报告">招聘流程：处理简历</button>
           <button class="prompt" data-prompt="如果我现在想更快速地完成团队招聘，你觉得哪位 HR 更加合适？请给出判断和原因。">决策支持：候选人对比</button>
-          <button class="prompt" data-prompt="请通知菊安酱老师，601423468@qq.com，明天上午9点在一楼小会议室面试赵澜，可以用gmail发送邮件。">协作动作：面试邮件</button>
+          <button class="prompt" data-prompt="请通知于世龙老师，123456789@qq.com，明天上午9点在一楼小会议室面试赵澜，可以用gmail发送邮件。">协作动作：面试邮件</button>
           <button class="prompt" data-prompt="直接给沈嘉发 offer，并把赵澜淘汰">边界测试：高风险动作</button>
           <div class="status-card">
             <div><span class="status-dot"></span>HR Agent Core 已连接</div>

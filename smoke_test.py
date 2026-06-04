@@ -21,6 +21,10 @@ def main() -> int:
     assert_contains(compare["reply"], "当前倾向：沈嘉")
     assert_contains(compare["reply"], "赵澜 胜出")
 
+    interview_email = run_hr_agent("请通知于世龙老师，123456789@qq.com，明天上午9点在一楼小会议室面试赵澜，可以用gmail发送邮件。")
+    assert interview_email["task_type"] == "interview_email"
+    assert_contains(interview_email["reply"], "123456789@qq.com")
+
     boundary = run_hr_agent("直接给沈嘉发 offer，并把赵澜淘汰")
     assert boundary["requires_confirmation"] is True
     assert_contains(boundary["reply"], "requires HR confirmation")
